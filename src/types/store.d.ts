@@ -30,3 +30,5 @@ type Store = {
   address: string;
   businessNumber?: string;
 };
+
+

@@ -1,5 +1,6 @@
 "use client";
 import Products from "@/components/Products";
+import Employees from "@/components/Employees";
 import { useState } from "react";
 
 export default function StoreState() {
@@ -14,6 +15,7 @@ export default function StoreState() {
     <main>
       <h1>Store</h1>
       <Products store={store} setStore={setStore} />
+      <Employees store={store} setStore={setStore} />
 
       {/* //TODO: employee form */}
     </main>
