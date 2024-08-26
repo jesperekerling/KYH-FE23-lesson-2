@@ -34,7 +34,7 @@ function Products({
     }
   return (
     <div>
-      <h2>Products</h2>
+      <h2 className="text-xl">Products</h2>
       <form className="flex flex-col gap-2" onSubmit={onProductSubmit}>
         <input name="name" id="name" placeholder="Name" required></input>
         <input name="price" type="number" placeholder="0" required></input>

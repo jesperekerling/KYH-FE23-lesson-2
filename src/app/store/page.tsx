@@ -12,7 +12,7 @@ export default function StoreState() {
   });
 
   return (
-    <main>
+    <main className="container mx-auto p-10">
       <h1>Store</h1>
       <Products store={store} setStore={setStore} />
       <Employees store={store} setStore={setStore} />

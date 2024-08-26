@@ -9,6 +9,7 @@ type EmployeesProps = {
 function Employees({ store, setStore }: EmployeesProps) {
   function onEmployeeSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    console.log('Form submitted')
     const formData = new FormData(e.target as HTMLFormElement);
     const firstName = formData.get("firstName") as string;
     const lastName = formData.get("lastName") as string;
@@ -38,7 +39,7 @@ function Employees({ store, setStore }: EmployeesProps) {
 
   return (
     <div>
-      <h2>Employees</h2>
+      <h2 className="text-xl">Employees</h2>
       <form className="flex flex-col gap-2" onSubmit={onEmployeeSubmit}>
         <input name="firstName" placeholder="First Name" required />
         <input name="lastName" placeholder="Last Name" required />
